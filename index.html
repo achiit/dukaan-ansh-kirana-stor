@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ansh Kirana Store – Jana Bazar | Order on WhatsApp</title>
+<meta name="description" content="Ansh Kirana Store, Jana Bazar. 16 saal ka bharosa. Sab items available. WhatsApp par order karein.">
+<style>
+:root{--bg:#fffaf0;--s:#fff;--tx:#24160d;--mu:#6f5a48;--ac:#d63a2a;--ac2:#ff8a00;--ink:#fff;--ln:#f0e1c2;--ch:#fff0cf;--sh:0 8px 24px rgba(120,60,0,.12);--gr:#128c3e;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#150e08;--s:#231810;--tx:#fbefd9;--mu:#cdb492;--ac:#ff6a55;--ac2:#ffa530;--ink:#1a0e08;--ln:#40301f;--ch:#33241a;--sh:0 8px 24px rgba(0,0,0,.45);--gr:#4ade80}}
+:root[data-theme="dark"]{--bg:#150e08;--s:#231810;--tx:#fbefd9;--mu:#cdb492;--ac:#ff6a55;--ac2:#ffa530;--ink:#1a0e08;--ln:#40301f;--ch:#33241a;--sh:0 8px 24px rgba(0,0,0,.45);--gr:#4ade80}
+*{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth;height:auto}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;line-height:1.5}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--s);z-index:40}
+.w{max-width:1000px;margin:0 auto;padding:0 16px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--s);border-bottom:1px solid var(--ln)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:58px;gap:8px}
+.logo{font-family:Georgia,serif;font-weight:700;color:var(--ac);font-size:1.1rem;white-space:nowrap}
+.links{display:none}
+@media(min-width:700px){.links{display:flex;gap:18px}.links a{color:var(--tx);text-decoration:none;font-weight:600;font-size:.92rem}}
+.ib{background:var(--ch);border:1px solid var(--ln);color:var(--tx);border-radius:10px;height:38px;min-width:38px;padding:0 10px;font-size:1rem;cursor:pointer;font-family:inherit;font-weight:700}
+.ib.cartb{background:var(--ac);color:var(--ink);border-color:var(--ac)}
+.hero{background:linear-gradient(135deg,var(--ac),var(--ac2));color:#fff;padding:40px 0 78px;position:relative;overflow:hidden}
+.hero .w{display:grid;gap:18px;align-items:center}
+@media(min-width:800px){.hero .w{grid-template-columns:1.2fr .8fr}}
+.pill{display:inline-flex;gap:6px;align-items:center;background:rgba(255,255,255,.22);padding:5px 14px;border-radius:99px;font-size:.82rem;font-weight:600}
+.dot{width:9px;height:9px;border-radius:50%;background:#9ca3af}
+.dot.on{background:#34d399;box-shadow:0 0 0 4px rgba(52,211,153,.35)}
+h1{font-family:Georgia,serif;font-size:clamp(2.2rem,9vw,3.8rem);line-height:1.05;margin:14px 0 10px}
+.hero p{max-width:32em;margin:0 0 22px;font-size:1.05rem}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:13px 22px;border-radius:12px;font-weight:700;text-decoration:none;border:0;font-size:1rem;cursor:pointer;font-family:inherit}
+.btn.wa{background:#25d366;color:#06300f}.btn.gh{background:#fff;color:#b32a1b}.btn.pr{background:var(--ac);color:var(--ink)}
+.art{display:none;font-size:11rem;text-align:center;filter:drop-shadow(0 10px 20px rgba(0,0,0,.25))}
+@media(min-width:800px){.art{display:block}}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:-46px;position:relative;z-index:2}
+.st{background:var(--s);border-radius:16px;padding:14px 6px;text-align:center;box-shadow:var(--sh)}
+.st b{display:block;font-size:1.5rem;color:var(--ac)}.st span{font-size:.75rem;color:var(--mu)}
+section{padding:38px 0 4px}
+h2{font-family:Georgia,serif;font-size:1.75rem;margin:0 0 4px}
+.sub{color:var(--mu);margin:0 0 16px}
+.srch{width:100%;padding:13px 16px;border-radius:12px;border:1.5px solid var(--ln);background:var(--s);color:var(--tx);font-size:1rem;font-family:inherit;margin-bottom:12px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:10px}
+.chip{flex:none;background:var(--ch);color:var(--tx);border:1px solid var(--ln);padding:8px 16px;border-radius:99px;font-weight:600;cursor:pointer;font-family:inherit}
+.chip.on{background:var(--ac);color:var(--ink);border-color:var(--ac)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media(min-width:640px){.grid{grid-template-columns:repeat(3,1fr)}}@media(min-width:900px){.grid{grid-template-columns:repeat(4,1fr)}}
+.card{background:var(--s);border:1px solid var(--ln);border-radius:18px;padding:16px 10px 12px;text-align:center;box-shadow:var(--sh);transition:transform .2s}
+.card:hover{transform:translateY(-3px)}
+.card .e{font-size:2.5rem;display:block}.card b{display:block;margin:6px 0 2px;font-size:.95rem}.card small{color:var(--mu);display:block;min-height:1.3em}
+.add{margin-top:10px;width:100%;background:var(--ch);color:var(--ac);border:1.5px solid var(--ac);border-radius:10px;padding:8px;font-weight:700;cursor:pointer;font-family:inherit}
+.qty{margin-top:10px;display:flex;align-items:center;justify-content:space-between;background:var(--ac);color:var(--ink);border-radius:10px;padding:3px}
+.qty button{background:transparent;border:0;color:inherit;font-size:1.3rem;font-weight:700;width:38px;height:34px;cursor:pointer}
+.empty{grid-column:1/-1;text-align:center;color:var(--mu);padding:24px}
+.feat{display:grid;gap:12px}@media(min-width:700px){.feat{grid-template-columns:repeat(3,1fr)}}
+.f{background:var(--s);border:1px solid var(--ln);border-radius:18px;padding:18px;box-shadow:var(--sh)}
+.f .e{font-size:1.9rem}.f b{display:block;margin:4px 0}.f span{color:var(--mu);font-size:.92rem}
+.steps{display:grid;gap:10px;counter-reset:s}@media(min-width:700px){.steps{grid-template-columns:repeat(4,1fr)}}
+.sp{background:var(--ch);border-radius:16px;padding:16px;position:relative}
+.sp::before{counter-increment:s;content:counter(s);display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--ac);color:var(--ink);font-weight:700;margin-bottom:6px}
+details{background:var(--s);border:1px solid var(--ln);border-radius:14px;padding:14px 16px;margin-bottom:8px}
+summary{font-weight:700;cursor:pointer}details p{margin:8px 0 0;color:var(--mu)}
+.info{display:grid;gap:10px}@media(min-width:700px){.info{grid-template-columns:1fr 1fr}}
+.row{background:var(--s);border:1px solid var(--ln);border-radius:14px;padding:14px 16px}
+.row small{display:block;color:var(--mu);text-transform:uppercase;letter-spacing:.07em;font-size:.7rem}
+.row a{color:var(--ac);font-weight:700;text-decoration:none;word-break:break-all}
+footer{text-align:center;color:var(--mu);padding:34px 16px 120px;font-size:.88rem}
+.bar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:35;display:flex;justify-content:center;transition:transform .3s}
+.bar.h{transform:translateY(160%)}
+.bar .btn{width:100%;max-width:560px;box-shadow:0 10px 26px rgba(0,0,0,.35)}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:50;display:none}.ov.on{display:block}
+.dr{position:fixed;left:0;right:0;bottom:0;z-index:51;background:var(--s);border-radius:22px 22px 0 0;max-height:92%;overflow-y:auto;padding:18px 16px calc(18px + env(safe-area-inset-bottom,0px));transform:translateY(105%);transition:transform .3s;max-width:640px;margin:0 auto}
+.dr.on{transform:none}
+.dr h3{margin:0 0 10px;font-family:Georgia,serif;font-size:1.4rem;display:flex;justify-content:space-between;align-items:center}
+.li{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--ln)}
+.li .nm{flex:1;font-weight:600}.li .q{display:flex;align-items:center;gap:6px}
+.li .q button{width:30px;height:30px;border-radius:8px;border:1px solid var(--ln);background:var(--ch);color:var(--tx);font-weight:700;cursor:pointer}
+.fld{width:100%;padding:12px 14px;border-radius:10px;border:1.5px solid var(--ln);background:var(--bg);color:var(--tx);font-size:1rem;font-family:inherit;margin-top:10px}
+.seg{display:flex;gap:8px;margin-top:10px}.seg button{flex:1;padding:11px;border-radius:10px;border:1.5px solid var(--ln);background:var(--ch);color:var(--tx);font-weight:700;cursor:pointer;font-family:inherit}
+.seg button.on{background:var(--ac);color:var(--ink);border-color:var(--ac)}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+.tk{background:var(--tx);color:var(--bg);overflow:hidden;white-space:nowrap;font-size:.85rem;font-weight:600;padding:7px 0}
+.tkin{display:inline-block;padding-left:100%;animation:tk 30s linear infinite}
+@keyframes tk{to{transform:translateX(-100%)}}
+@media(prefers-reduced-motion:reduce){.tkin{animation:none;padding-left:16px}}
+.bund{display:flex;gap:12px;overflow-x:auto;padding:4px 2px 12px;scroll-snap-type:x mandatory}
+.bu{flex:none;width:235px;scroll-snap-align:start;background:var(--s);border:1px solid var(--ln);border-radius:18px;padding:16px;box-shadow:var(--sh)}
+.bu .e{font-size:2.1rem}.bu b{display:block;margin:4px 0}.bu small{color:var(--mu);display:block;min-height:3.8em;font-size:.82rem}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"GroceryStore","name":"Ansh Kirana Store","telephone":"+919120600719","email":"anshgond2006@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Jana Bazar","addressCountry":"IN"},"openingHours":"Mo-Su 06:00-22:00","sameAs":["https://instagram.com/anshgond147"]}</script>
+</head>
+<body>
+<nav><div class="w">
+  <span class="logo">🛒 Ansh Kirana</span>
+  <div class="links"><a href="#products">Saman</a><a href="#how">Kaise order</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+  <div style="display:flex;gap:8px"><button class="ib" id="theme" aria-label="Theme">🌓</button><button class="ib cartb" id="cartb">🧺 <span id="cc">0</span></button></div>
+</div></nav>
+<div class="tk" aria-hidden="true"><div class="tkin">🛒 130+ items ek hi dukaan par &nbsp;•&nbsp; 💬 WhatsApp par order &nbsp;•&nbsp; 🚚 Delivery ya Pickup &nbsp;•&nbsp; ✅ Sab items available &nbsp;•&nbsp; 🤝 16 saal ka bharosa &nbsp;•&nbsp; 📦 Monthly aur bulk order ka rate WhatsApp par puchhiye</div></div>
+
+<div class="hero"><div class="w">
+  <div>
+    <span class="pill"><span class="dot" id="dot"></span><span id="open">Checking…</span> · Jana Bazar</span>
+    <h1>Ansh Kirana Store</h1>
+    <p>Best seller in market. 16 saal ka bharosa, roz ki saari zarurat ek hi dukaan par. Saman chuniye, WhatsApp par bhejiye, bas.</p>
+    <div class="btns">
+      <a class="btn wa" href="#products">🛍️ Order shuru karein</a>
+      <a class="btn gh" href="tel:+919120600719">📞 Call karein</a>
+    </div>
+  </div>
+  <div class="art" aria-hidden="true">🧺</div>
+</div></div>
+
+<div class="w">
+  <div class="stats rv">
+    <div class="st"><b>16+</b><span>saal ka bharosa</span></div>
+    <div class="st"><b>100%</b><span>items available</span></div>
+    <div class="st"><b>130+</b><span>products available</span></div>
+  </div>
+
+  <section id="combo" class="rv">
+    <h2>Ready Combo Kits</h2>
+    <p class="sub">Ek tap me poora kit basket me. Baad me kuch bhi kam ya zyada kar sakte hain.</p>
+    <div class="bund" id="bund"></div>
+  </section>
+
+  <section id="products">
+    <h2>Saman chuniye</h2>
+    <p class="sub">Search karein ya category chuniye. Price WhatsApp par confirm hota hai.</p>
+    <input class="srch" id="q" type="search" placeholder="Search: atta, chai, sabun…" aria-label="Search">
+    <div class="chips" id="chips"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="how" class="rv">
+    <h2>Order kaise karein</h2><p class="sub">Sirf 4 aasan kadam.</p>
+    <div class="steps">
+      <div class="sp"><b>Saman chuniye</b><br><small>“Add” dabaiye</small></div>
+      <div class="sp"><b>Basket kholiye</b><br><small>Naam aur pata bharein</small></div>
+      <div class="sp"><b>WhatsApp bhejein</b><br><small>Ek tap me list jati hai</small></div>
+      <div class="sp"><b>Saman paayein</b><br><small>Delivery ya pickup</small></div>
+    </div>
+  </section>
+
+  <section class="rv">
+    <h2>Ansh Kirana kyun?</h2><p class="sub">Choti dukaan, bada bharosa.</p>
+    <div class="feat">
+      <div class="f"><span class="e">✅</span><b>Sab items available</b><span>Jo chahiye wahi milega, dusri dukaan nahi jaana.</span></div>
+      <div class="f"><span class="e">🤝</span><b>Owner khud dukaan par</b><span>Ansh ji seedhi baat karte hain, apnapan ke saath.</span></div>
+      <div class="f"><span class="e">🚚</span><b>Ghar tak saman</b><span>List bhejiye, saman tayyar milega ya ghar aayega.</span></div>
+    </div>
+  </section>
+
+  <section id="faq" class="rv">
+    <h2>Aksar puchhe sawal</h2><p class="sub">&nbsp;</p>
+    <details><summary>Kya home delivery milti hai?</summary><p>Haan, WhatsApp par order bhejiye aur “Delivery” chuniye. Charges aur time Ansh ji confirm karenge.</p></details>
+    <details><summary>Price kaise pata chalega?</summary><p>Order bhejne ke baad WhatsApp par aaj ke rate bata diye jate hain, phir aap confirm karte hain.</p></details>
+    <details><summary>Payment kaise karein?</summary><p>Cash ya UPI, jo aapko aasan lage. Detail chat par taye hoti hai.</p></details>
+    <details><summary>Jo item list me nahi hai?</summary><p>Basket ke “Note” me likh dijiye ya seedha WhatsApp kijiye. Sab items available hain.</p></details>
+  </section>
+
+  <section id="contact" class="rv">
+    <h2>Humse milen</h2><p class="sub">Dukaan par aaiye ya ghar baithe order kijiye.</p>
+    <div class="info">
+      <div class="row"><small>Address</small>Jana Bazar · <a href="https://www.google.com/maps/search/?api=1&amp;query=Ansh+Kirana+Store+Jana+Bazar" target="_blank" rel="noopener">Map kholein</a></div>
+      <div class="row"><small>Owner</small>Ansh</div>
+      <div class="row"><small>Phone / WhatsApp</small><a href="tel:+919120600719">9120600719</a></div>
+      <div class="row"><small>Email</small><a href="mailto:anshgond2006@gmail.com">anshgond2006@gmail.com</a></div>
+      <div class="row"><small>Instagram</small><a href="https://instagram.com/anshgond147" target="_blank" rel="noopener">@anshgond147</a></div>
+      <div class="row"><small>Dost ko bhejein</small><a href="#" id="share" target="_blank" rel="noopener">Website share karein</a></div>
+      <div class="row"><small>Timing</small>Roz khula · 6:00 AM – 10:00 PM</div>
+    </div>
+  </section>
+</div>
+<footer>© Ansh Kirana Store, Jana Bazar · Aapki apni dukaan</footer>
+
+<div class="bar h" id="bar"><button class="btn pr" id="bb">🧺 Basket dekhein</button></div>
+<div class="ov" id="ov"></div>
+<div class="dr" id="dr" role="dialog" aria-label="Basket">
+  <h3>Aapka basket <button class="ib" id="cl">✕</button></h3>
+  <div id="items"></div>
+  <input class="fld" id="nm" placeholder="Aapka naam">
+  <div class="seg"><button id="sd" class="on">🚚 Delivery</button><button id="sp">🏪 Pickup</button></div>
+  <input class="fld" id="ad" placeholder="Delivery ka pata / landmark">
+  <textarea class="fld" id="nt" rows="2" placeholder="Note (optional): brand, quantity, kuch aur"></textarea>
+  <a class="btn wa" id="send" href="#" target="_blank" rel="noopener" style="width:100%;margin-top:14px">💬 WhatsApp par order bhejein</a>
+  <button class="btn gh" id="reord" style="display:none;width:100%;margin-top:8px;border:1.5px solid var(--ln);background:var(--ch);color:var(--tx)">🔁 Pichla order dobara</button>
+  <button class="btn gh" id="copy" style="width:100%;margin-top:8px;border:1.5px solid var(--ln);background:var(--ch);color:var(--tx)">📋 Order copy karein</button>
+  <p style="color:var(--mu);font-size:.82rem;text-align:center;margin:8px 0 0">Price WhatsApp par confirm hoga.</p>
+</div>
+
+<script>
+var HOURS=[6,22],PH="919120600719";
+var P=[["🌾","Atta","Rashan","Gehu, multigrain"],["🍚","Chawal","Rashan","Basmati, regular"],["🫘","Dal","Rashan","Sab kism ki"],["🧂","Namak, Cheeni","Rashan","Roz ki basic"],["🌶️","Masale","Rashan","Haldi, mirch, dhaniya"],["🛢️","Tel, Ghee","Rashan","Sab brands"],["☕","Chai Patti, Coffee","Rashan","Subah ki shuruaat"],["🥜","Dry Fruits","Rashan","Kaju, badam, kishmish"],["🍪","Biscuit","Snacks","Sab brands"],["🥨","Namkeen","Snacks","Chatpate"],["🍫","Chocolate","Snacks","Bachchon ki pasand"],["🥤","Cold Drinks","Peene ka","Thande"],["🧃","Juice","Peene ka","Packaged"],["💧","Paani Bottle","Peene ka","Saaf paani"],["🧼","Sabun","Ghar ka","Nahane, kapde ka"],["🧴","Shampoo, Detergent","Ghar ka","Safai ka saman"],["🪥","Toothpaste","Ghar ka","Brush bhi"],["🧹","Cleaning Items","Ghar ka","Phenyl, jhadu"],["🪔","Pooja Saman","Pooja","Dhoop, diya, agarbatti"],["✏️","Stationery","Pooja","Copy, pen, pencil"]];
+P=P.concat([["🌾","Besan","Rashan","Pakode, kadhi"],["🌾","Maida","Rashan","Baking, puri"],["🌾","Suji","Rashan","Halwa, upma"],["🍚","Poha","Rashan","Naashte ka"],["⚪","Sabudana","Rashan","Vrat ke liye"],["🫘","Rajma","Rashan","Chitra, jammu"],["🫘","Kabuli Chana","Rashan","Chole"],["🫘","Kala Chana","Rashan","Protein se bharpoor"],["🫘","Moong Dal","Rashan","Dhuli, chilka"],["🫘","Masoor Dal","Rashan","Lal dal"],["🫘","Arhar Dal","Rashan","Tur dal"],["🫘","Urad Dal","Rashan","Dhuli, kali"],["🌿","Jeera","Rashan","Tadke ke liye"],["🌿","Rai, Sarson","Rashan","Tadka"],["🟡","Haldi Powder","Rashan","Pisi haldi"],["🌶️","Lal Mirch","Rashan","Teekhi, kashmiri"],["🌿","Dhaniya Powder","Rashan","Pisa dhaniya"],["🧆","Garam Masala","Rashan","Sab brands"],["🧄","Hing","Rashan","Khushboo wali"],["🌿","Ajwain","Rashan","Pet ke liye achha"],["🌿","Elaichi, Laung","Rashan","Chai aur mithai"],["⚫","Kali Mirch","Rashan","Sabut aur pisi"],["🟤","Gud","Rashan","Desi gud"],["🧂","Sendha Namak","Rashan","Vrat ka"],["🌾","Daliya","Rashan","Sehat wala"],["🌾","Sattu","Rashan","Garmi ka drink"],["🫓","Papad","Rashan","Moong, urad"],["🥒","Achar","Rashan","Aam, nimbu, mirch"],["🍶","Sirka","Rashan","Cooking ke liye"],["🍅","Tomato Ketchup","Rashan","Sauce"],["🍯","Shahad (Honey)","Rashan","Shuddh shahad"],["🍓","Jam","Rashan","Mixed fruit"],["🥜","Peanut Butter","Rashan","Creamy, crunchy"],["🍜","Noodles, Maggi","Rashan","2 minute"],["🍝","Pasta, Macaroni","Rashan","Bachchon ka"],["🥣","Oats","Rashan","Naashta"],["🥣","Cornflakes","Rashan","Doodh ke saath"],["🥥","Nariyal Tel","Rashan","Parachute"],["🥜","Moongfali Dana","Rashan","Kaccha, bhuna"],["🍬","Mishri","Rashan","Pooja aur chai"],["🥛","Doodh","Dairy","Packet wala"],["🥣","Dahi","Dairy","Taaza"],["🧀","Paneer","Dairy","Taaza"],["🧈","Makhan (Butter)","Dairy","Amul"],["🧀","Cheese","Dairy","Slice, cube"],["🥚","Ande","Dairy","Taaza"],["🍞","Bread","Dairy","White, brown"],["🥖","Pav, Bun","Dairy","Taaza"],["🥐","Rusk","Dairy","Chai ke saath"],["🍰","Cake","Dairy","Slice cake"],["🥛","Lassi, Chaas","Dairy","Thandi"],["🍟","Chips","Snacks","Lays, Bingo"],["🌽","Kurkure","Snacks","Masala"],["🥨","Aloo Bhujia","Snacks","Haldiram"],["🥨","Mixture","Snacks","Chatpata"],["🍿","Popcorn","Snacks","Namkeen, caramel"],["🍘","Mathri, Sev","Snacks","Ghar jaisa"],["🍪","Cream Biscuit","Snacks","Oreo, bourbon"],["🍪","Glucose Biscuit","Snacks","Parle-G"],["🍬","Toffee, Candy","Snacks","Mazedar"],["🍭","Lollipop","Snacks","Bachchon ke liye"],["🫧","Chewing Gum","Snacks","Fresh"],["🍫","Wafers","Snacks","Crunchy"],["🍬","Mithai","Snacks","Tyoharon ke liye"],["☕","Chai (Loose)","Peene ka","Tata, Red Label"],["🥛","Bournvita, Horlicks","Peene ka","Sehat ka"],["🍹","Rooh Afza","Peene ka","Garmi ka sharbat"],["🍹","Tang, Glucon-D","Peene ka","Instant energy"],["🍋","Nimbu Paani Mix","Peene ka","Jaljeera, shikanji"],["⚡","Energy Drink","Peene ka","Red Bull, Sting"],["🫧","Soda","Peene ka","Sada, masala"],["🍵","Green Tea","Peene ka","Tea bags"],["🥥","Nariyal Paani","Peene ka","Packaged"],["🧴","Face Wash","Care","Sab brands"],["🧴","Cream, Lotion","Care","Winter, daily"],["🌸","Powder (Talc)","Care","Fresh"],["🧴","Deodorant","Care","Spray, roll-on"],["🛢️","Hair Oil","Care","Amla, coconut"],["👁️","Kajal, Bindi","Care","Roz ka"],["🪮","Kanghi (Comb)","Care","Plastic"],["🪒","Razor, Blade","Care","Gillette"],["🧼","Shaving Cream","Care","Foam, gel"],["🩸","Sanitary Pads","Care","Sab brands"],["🧴","Handwash, Sanitizer","Care","Safe aur fresh"],["💄","Lip Balm","Care","Winter"],["☁️","Cotton, Ear Buds","Care","Roz ka"],["🧴","Mehendi","Care","Tyoharon ke liye"],["🍽️","Dishwash Bar, Gel","Ghar ka","Vim, Exo"],["🚽","Toilet Cleaner","Ghar ka","Harpic"],["🧽","Floor Cleaner","Ghar ka","Lizol"],["🔥","Matchbox","Ghar ka","Safe"],["🦟","Mosquito Coil, Liquid","Ghar ka","All Out, Good Knight"],["🕯️","Candle","Ghar ka","Bijli ke liye"],["🔋","Battery (Cell)","Ghar ka","AA, AAA"],["💡","LED Bulb","Ghar ka","9W, 12W"],["🧻","Tissue Paper","Ghar ka","Roll, box"],["🗑️","Garbage Bag","Ghar ka","Dustbin ke liye"],["🧽","Scrub, Sponge","Ghar ka","Bartan ke liye"],["🛍️","Polythene, Foil","Ghar ka","Packing ke liye"],["🌬️","Room Freshener","Ghar ka","Khushboo"],["🪔","Kapoor","Pooja","Aarti ke liye"],["🔴","Roli, Chawal","Pooja","Tilak"],["🧵","Kalawa (Mauli)","Pooja","Pooja ka"],["🪔","Batti, Ghee Diya","Pooja","Roz ki pooja"],["💧","Gangajal","Pooja","Pavitra"],["🖊️","Pen, Pencil","Pooja","School ke liye"],["📒","Copy, Register","Pooja","Sab size"],["📎","Eraser, Sharpener","Pooja","Bachchon ke liye"],["🧴","Gum, Glue","Pooja","Fevicol"],["📏","Geometry Box","Pooja","School"],["👶","Diapers","Baby","Pampers"],["🍼","Cerelac","Baby","6 mahine+"],["🧼","Baby Soap","Baby","Soft"],["🌸","Baby Powder","Baby","Johnson's"],["🛢️","Baby Oil","Baby","Malish ke liye"],["🧴","Baby Lotion","Baby","Soft skin"],["🧻","Baby Wipes","Baby","Gentle"]]);
+var cats=["Sab"].concat(P.map(function(p){return p[2]}).filter(function(v,i,a){return a.indexOf(v)===i}));
+var cat="Sab",term="",cart={},mode="Delivery",$=function(i){return document.getElementById(i)};
+try{var s=localStorage.getItem("ansh_cart");if(s)cart=JSON.parse(s)||{}}catch(e){}
+function save(){try{localStorage.setItem("ansh_cart",JSON.stringify(cart))}catch(e){}}
+function count(){return Object.keys(cart).reduce(function(a,k){return a+cart[k]},0)}
+function render(){
+  $("chips").innerHTML=cats.map(function(c){return '<button class="chip'+(c===cat?' on':'')+'" data-c="'+c+'">'+c+'</button>'}).join("");
+  var h=P.map(function(p,i){
+    if(cat!=="Sab"&&p[2]!==cat)return "";
+    if(term&&(p[1]+p[3]+p[2]).toLowerCase().indexOf(term)<0)return "";
+    var q=cart[i]||0;
+    var a=q?'<div class="qty"><button data-m="'+i+'" aria-label="Kam">−</button><b>'+q+'</b><button data-a="'+i+'" aria-label="Zyada">+</button></div>':'<button class="add" data-a="'+i+'">+ Add</button>';
+    return '<div class="card"><span class="e">'+p[0]+'</span><b>'+p[1]+'</b><small>'+p[3]+'</small>'+a+'</div>';
+  }).join("");
+  $("grid").innerHTML=h||'<div class="empty">Ye item list me nahi mila. Basket ke Note me likh dijiye, sab available hai.</div>';
+  var n=count();$("cc").textContent=n;sync();$("bb").textContent="🧺 Basket dekhein ("+n+")";
+  $("bar").classList.toggle("h",!n||$("dr").classList.contains("on"));
+  var ks=Object.keys(cart);
+  $("items").innerHTML=ks.length?ks.map(function(k){return '<div class="li"><span style="font-size:1.6rem">'+P[k][0]+'</span><span class="nm">'+P[k][1]+'</span><span class="q"><button data-m="'+k+'">−</button><b>'+cart[k]+'</b><button data-a="'+k+'">+</button></span></div>'}).join(""):'<p style="color:var(--mu)">Basket khali hai. Upar se saman add kijiye.</p>';
+}
+function drawer(on){$("dr").classList.toggle("on",on);$("ov").classList.toggle("on",on);render()}
+document.addEventListener("click",function(e){
+  var t=e.target.closest("button");if(!t)return;var d=t.dataset;
+  if(d.c){cat=d.c;render()}
+  else if(d.a!==undefined){cart[d.a]=(cart[d.a]||0)+1;save();render()}
+  else if(d.m!==undefined){cart[d.m]--;if(cart[d.m]<=0)delete cart[d.m];save();render()}
+});
+$("q").oninput=function(){term=this.value.trim().toLowerCase();render()};
+$("cartb").onclick=$("bb").onclick=function(){drawer(true)};
+$("cl").onclick=$("ov").onclick=function(){drawer(false)};
+$("sd").onclick=function(){mode="Delivery";$("sd").className="on";$("sp").className="";$("ad").style.display=""};
+$("sp").onclick=function(){mode="Pickup";$("sp").className="on";$("sd").className="";$("ad").style.display="none"};
+function build(){
+  var ks=Object.keys(cart),m="Namaste Ansh Kirana Store 🙏\n";
+  if(ks.length)m+="Mujhe ye saman chahiye:\n"+ks.map(function(k){return "• "+P[k][1]+" × "+cart[k]}).join("\n");
+  else m+="Mujhe saman order karna hai.";
+  if($("nm").value)m+="\n\nNaam: "+$("nm").value;
+  m+="\nType: "+mode;
+  if(mode==="Delivery"&&$("ad").value)m+="\nPata: "+$("ad").value;
+  if($("nt").value)m+="\nNote: "+$("nt").value;
+  m+="\n\nKripya price aur time bataiye. Dhanyawad!";
+  return m;
+}
+function sync(){$("send").href="https://api.whatsapp.com/send?phone="+PH+"&text="+encodeURIComponent(build())}
+["nm","ad","nt"].forEach(function(i){$(i).addEventListener("input",sync)});
+$("sd").addEventListener("click",sync);$("sp").addEventListener("click",sync);
+$("copy").onclick=function(){var b=this,t=build();function ok(){b.textContent="✅ Copy ho gaya, WhatsApp me paste karein"}try{navigator.clipboard.writeText(t).then(ok,function(){fb()})}catch(e){fb()}function fb(){var a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();try{document.execCommand("copy");ok()}catch(e){b.textContent="Copy nahi hua, phone par call karein"}a.remove()}};
+$("theme").onclick=function(){var r=document.documentElement,dk=r.getAttribute("data-theme")?r.getAttribute("data-theme")==="dark":matchMedia("(prefers-color-scheme:dark)").matches;r.setAttribute("data-theme",dk?"light":"dark")};
+(function(){var h=new Date().getHours(),o=h>=HOURS[0]&&h<HOURS[1];$("open").textContent=o?"Abhi khula hai":"Abhi band hai, kal "+HOURS[0]+" baje khulega";$("dot").className="dot"+(o?" on":"")})();
+if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.1});document.querySelectorAll(".rv").forEach(function(n){io.observe(n)})}else{document.querySelectorAll(".rv").forEach(function(n){n.classList.add("in")})}
+var B=[["🧺","Mahine ka Rashan","Atta, Chawal, Dal, Namak-Cheeni, Tel-Ghee, Masale, Chai",["Atta","Chawal","Dal","Namak, Cheeni","Tel, Ghee","Masale","Chai Patti, Coffee"]],["🍳","Naashta Kit","Bread, Ande, Doodh, Makhan, Jam, Cornflakes",["Bread","Ande","Doodh","Makhan (Butter)","Jam","Cornflakes"]],["🪔","Pooja Kit","Pooja saman, Kapoor, Roli, Kalawa, Batti, Gangajal",["Pooja Saman","Kapoor","Roli, Chawal","Kalawa (Mauli)","Batti, Ghee Diya","Gangajal"]],["🧹","Safai Kit","Sabun, Detergent, Dishwash, Floor aur Toilet cleaner, Scrub",["Sabun","Shampoo, Detergent","Dishwash Bar, Gel","Floor Cleaner","Toilet Cleaner","Scrub, Sponge"]],["🎉","Party Kit","Chips, Kurkure, Namkeen, Cold drinks, Juice, Popcorn",["Chips","Kurkure","Namkeen","Cold Drinks","Juice","Popcorn"]],["👶","Baby Kit","Diapers, Cerelac, Baby soap, powder, wipes",["Diapers","Cerelac","Baby Soap","Baby Powder","Baby Wipes"]]];
+$("bund").innerHTML=B.map(function(b,i){return '<div class="bu"><span class="e">'+b[0]+'</span><b>'+b[1]+'</b><small>'+b[2]+'</small><button class="add" data-b="'+i+'">+ Poora kit add karein</button></div>'}).join("");
+document.addEventListener("click",function(e){var t=e.target.closest("button");if(!t||t.dataset.b===undefined)return;B[t.dataset.b][3].forEach(function(n){for(var i=0;i<P.length;i++){if(P[i][1]===n){cart[i]=(cart[i]||0)+1;break}}});save();render();drawer(true)});
+function showR(){var h=false;try{h=!!localStorage.getItem("ansh_last")}catch(e){}$("reord").style.display=h?"":"none"}
+$("cartb").addEventListener("click",showR);$("bb").addEventListener("click",showR);
+$("reord").onclick=function(){try{var l=JSON.parse(localStorage.getItem("ansh_last")||"{}");Object.keys(l).forEach(function(k){if(P[k])cart[k]=l[k]});save();render()}catch(e){}};
+$("send").addEventListener("click",function(){try{localStorage.setItem("ansh_last",JSON.stringify(cart))}catch(e){}});
+$("share").href="https://api.whatsapp.com/send?text="+encodeURIComponent("Ansh Kirana Store, Jana Bazar. Saman order karein: "+location.href);
+$("share").onclick=function(e){if(navigator.share){e.preventDefault();navigator.share({title:"Ansh Kirana Store",text:"Ansh Kirana Store, Jana Bazar: saman WhatsApp par order karein",url:location.href}).catch(function(){})}};
+render();
+</script>
+</body>
+</html>
